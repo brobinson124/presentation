@@ -1,7 +1,37 @@
-Talk
+%ES7 Typed Objects
+%CSCI 3155
+%**J**esus Ortiz, **A**licia Fesone, **B**rooke Robinson, **S**laton Spangler
+
+
+Introduction of Typed Objects
+====
+* A feature of ECMA7 
+* Proposed to better the memory storage of objects
+* 
+   
+
+***
+
+Overview of Presentation
+====
+* Motivation
+* The difference with semantics and syntax
+* Comparison to Typed Arrays
+* About Typed Objects
+* Implemenation
+* Examples
+* Pros
+* Cons
+* Performance
+* Summary/Conclusion/References
+
+
+***
+
+Example
 ====
 
-* Place your talk here
-* Remember, no more than 20 slides
-* And exactly 15 seconds per slide
-* That gives you exactly 5 minutes for your talk!
+````javascript
+def f(x):
+	return x * 2
+````
