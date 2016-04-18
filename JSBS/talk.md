@@ -1,6 +1,6 @@
 %ES7 Typed Objects
 %CSCI 3155
-%**J**esus Ortiz, **A**licia Fesone, **B**rooke Robinson, **S**laton Spangler
+%**J**esus Ortiz, **A**licia Frisone, **B**rooke Robinson, **S**laton Spangler
 
 
 Introduction of Typed Objects
