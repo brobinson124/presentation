@@ -5,10 +5,27 @@
 
 Introduction of Typed Objects
 ====
-* A feature of ECMA7 
+* A feature of ECMAScript 7 
+* Allows the use of defined types in objects
 * Proposed to better the memory storage of objects
-* 
+* More predictable performance
    
+
+***
+History
+====
+* JavaScript is a dynamically typed language
+* Assigning different types to the same variable allowed
+* ES^ introduced typed arrays, but they have their limitations
+
+
+***
+Typed Arrays and Typed Objects
+====
+* Typed Objects are generalizations of Typed Arrays
+* Typed Arrays cannot use non scaler types, such as references to objects
+* Typed objects overcome these limitations
+
 
 ***
 
