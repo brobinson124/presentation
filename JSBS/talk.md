@@ -39,7 +39,23 @@ int16 | float64 | string
 uint32 | int32 | 
 
 ***
+Syntatic Difference: Traditional Objects vs. Typed Objects
+====
+````javascript
+function Car(color){
+	this.color = color;
+}
+var myCar = new Car("blue");
+````
+````javascript
+var Car = new StructType({color:string})
+var myCar = new Car();
+myCar.color = "blue"
+````
 
+
+)
+***
 Overview of Presentation
 ====
 * Motivation
