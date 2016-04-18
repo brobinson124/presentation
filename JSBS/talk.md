@@ -39,22 +39,35 @@ int16 | float64 | string
 uint32 | int32 | 
 
 ***
-Syntatic Difference: Traditional Objects vs. Typed Objects
+Difference between traditional objects
+====
+* JavaScript can allocate any data type to any variable
+..* Always allocates 64-bits in memory, regardless of the number
+* Typed Objects require that objects are the correct type
+..* Optimally allocates memory based on type
+..* int32 allocates 32 bits
+
+
+***
+Syntax Difference: Traditional Objects vs. Typed Objects
 ====
 ````javascript
 function Car(color){
 	this.color = color;
 }
 var myCar = new Car("blue");
+myCar.color = 1; //legal
 ````
 ````javascript
 var Car = new StructType({color:string})
 var myCar = new Car();
 myCar.color = "blue"
+myCar.color = 1; //Error! Invalid type
 ````
 
+***
 
-)
+====
 ***
 Overview of Presentation
 ====
