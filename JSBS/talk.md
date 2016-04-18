@@ -23,9 +23,20 @@ History
 Typed Arrays and Typed Objects
 ====
 * Typed Objects are generalizations of Typed Arrays
-* Typed Arrays cannot use non scaler types, such as references to objects
+* Typed Arrays cannot use non scaler types
+..* References to objects
+..* Structs
 * Typed objects overcome these limitations
 
+
+***
+What types are supported?
+====
+--- | --- | ---
+any | uint8 | int8
+float32 | object | uint16
+int16 | float64 | string
+uint32 | int32 | 
 
 ***
 
