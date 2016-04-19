@@ -110,9 +110,9 @@ Runtime Comparison
 ***
 Explanation of Benchmarks
 ====
-* The “array of scalars” benchmark consists of a loop reading and writing bytes from and to an array. There are fewer cache misses when using Typed Objects, so the ES7 implementation is faster.
-* The “struct fields” benchmark creates a struct with two fixed-length arrays as fields and repeatedly reads and writes those fields. The current JS implementation works better here.
-* The “array of structs” benchmark creates a 1024x768 image of Color structs. This test, run with Typed Objects, runs faster than the regular JS implementation, also due to fewer cache misses.
+* The “array of scalars” benchmark consists of a loop reading and writing bytes from and to an array.
+* The “struct fields” benchmark creates a struct with two fixed-length arrays as fields and repeatedly reads and writes those fields.
+* The “array of structs” benchmark creates a 1024x768 image of Color structs. This test.
 * **TL;DR: Typed Objects make cache misses less common**
 
 
@@ -166,7 +166,7 @@ Conclusion
 * Typed Objects are not yet supported
 * But when and if they are…
     - They will provide **faster**, more **memory-efficient** object type declarations 
-* Typed Objects add functionality to dynamic scoping
+* Typed Objects add functionality like static typing
 
 ***
 Resources
