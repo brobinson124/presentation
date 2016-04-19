@@ -137,7 +137,7 @@ Cons
 
 ***
 Example struct declaration
-===
+====
 
 Create a struct that will be our new type
 In this case, we are defining a “Point” type with two 8-bit integers
@@ -151,42 +151,14 @@ point.y = 257;
 ***
 Application Example
 ====
-````
-const Point2D = 
-  new StructType({ x: uint32, y: uint32 });
-const Color = 
-  new StructType({ r: uint8, g: uint8, b: uint8 });
-const Pixel = 
-  new StructType({ point: Point2D, color: Color });
- 
-const Triangle = Pixel.Array(3);
- 
-let t = 
-Triangle([{ point: { x:  0, y: 0 }, color: { r: 255, g: 255, b: 255 } },
-          { point: { x:  5, y: 5 }, color: { r: 128, g: 0,   b: 0   } },
-          { point: { x: 10, y: 0 }, color: { r: 0,   g: 0,   b: 128 } }]);
-````
+
+![](figures/code.png)
+
 ***
 Application Example (continued)
 ====
-````
-const Point2D = 
-  new StructType({ x: uint32, y: uint32 });
-const Color = 
-  new StructType({ r: uint8, g: uint8, b: uint8 });
-const Pixel = 
-  new StructType({ point: Point2D, color: Color });
- 
-const Triangle = Pixel.Array(3);
- 
-let t = 
-Triangle([{ point: { x:  0, y: 0 }, color: { r: 255, g: 255, b: 255 } },
-          { point: { x:  5, y: 5 }, color: { r: 128, g: 0,   b: 0   } },
-          { point: { x: 10, y: 0 }, color: { r: 0,   g: 0,   b: “128” } }]);
 
-* “128” is a string, this would cause an error since, b is declared as a unsigned 8 bit integer
-
-````
+![](figures/code2.png)
 
 ***
 Conclusion
@@ -201,5 +173,7 @@ Resources
 ====
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 * http://smallcultfollowing.com/babysteps/pubs/2014.04.01-TypedObjects.pdf
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_Next_support_in_Mozilla
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/
+ECMAScript_Next_support_in_Mozilla
+
 
